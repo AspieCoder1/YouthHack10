@@ -1,4 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<h1>RecycleTracker</h1>, document.getElementById('app'));
+import AppRouter from './router/AppRouter';
+import './styles/main.scss';
+
+ReactDOM.render(<AppRouter/>, document.getElementById('app'));

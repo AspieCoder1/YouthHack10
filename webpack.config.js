@@ -6,6 +6,9 @@ module.exports = env => {
 	const devMode = env !== 'production';
 
 	return {
+		node: {
+			fs: 'empty'
+		},
 		entry: './src/app.js',
 		output: {
 			path: path.resolve(__dirname, './public'),
@@ -35,6 +38,7 @@ module.exports = env => {
 		},
 		devtool: isProduction ? 'sourcemap' : 'inline-source-map',
 		devServer: {
+			historyApiFallback: true,
 			contentBase: path.join(__dirname, 'public'),
 			port: 3000
 		},
