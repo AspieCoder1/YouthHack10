@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ProgressBar from './ProgressBar.jsx';
 
@@ -53,6 +54,7 @@ export default class RecycleTracker extends React.Component {
 				<button className="button" onClick={this.incrementScore}>
 					Let's Recycle
 				</button>
+				<Link  className="center" to="/">Go Home</Link>
 			</div>
 		);
 	}

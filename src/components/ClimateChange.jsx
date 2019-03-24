@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default () => (
 	<div className="content-container">
@@ -49,5 +50,6 @@ export default () => (
 			<li>Recycling</li>
 			<li>Use public transport</li>
 		</ul>
+		<Link to="/">Go Home</Link>
 	</div>
 );
