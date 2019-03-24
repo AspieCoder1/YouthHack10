@@ -12,35 +12,35 @@ module.exports = env => {
 		entry: './src/app.js',
 		output: {
 			path: path.resolve(__dirname, './public'),
-			filename: './dist/bundle.js',
+			filename: './dist/bundle.js'
 		},
 		plugins: [
 			new MiniCssExtractPlugin({
-				filename: './dist/style.css',
-			}),
+				filename: './dist/style.css'
+			})
 		],
 		module: {
 			rules: [
 				{
 					test: /\.jsx*/,
 					exclude: /node_modules/,
-					loader: 'babel-loader',
+					loader: 'babel-loader'
 				},
 				{
 					test: /\.(sc|c)ss/,
 					use: [
 						devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
 						'css-loader',
-						'sass-loader',
-					],
-				},
-			],
+						'sass-loader'
+					]
+				}
+			]
 		},
 		devtool: isProduction ? 'sourcemap' : 'inline-source-map',
 		devServer: {
 			historyApiFallback: true,
 			contentBase: path.join(__dirname, 'public'),
 			port: 3000
-		},
+		}
 	};
 };
