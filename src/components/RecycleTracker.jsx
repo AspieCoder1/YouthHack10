@@ -54,7 +54,9 @@ export default class RecycleTracker extends React.Component {
 				<button className="button" onClick={this.incrementScore}>
 					Let's Recycle
 				</button>
-				<Link  className="center" to="/">Go Home</Link>
+				<Link className="center" to="/">
+					Go Home
+				</Link>
 			</div>
 		);
 	}
