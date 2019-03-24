@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "build": "webpack -p --env production --mode=production",
+    "heroku-postbuild": "yarn build",
     "dev-server": "webpack-dev-server --mode=development --env development"
   },
   "license": "MIT",
