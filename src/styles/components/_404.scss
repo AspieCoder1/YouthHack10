@@ -1,10 +1,15 @@
 .notfound {
+	margin: 0;
+	padding: 0;
 	background: green;
 	width: 100vw;
 	height: 100vh;
 }
 
 .notfound__text {
+	display: flex;
+	justify-content: center;
+	align-content: center;
 	margin: auto;
 	text-align: center;
 	font-size: 72pt;

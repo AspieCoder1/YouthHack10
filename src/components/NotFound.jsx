@@ -1,3 +1,7 @@
 import React from 'react';
 
-export default () => <h1 className="notfound__text">404: Not Found</h1>;
+export default () => (
+	<div className="notfound">
+		<h1 className="notfound__text">404: Page Not Found</h1>
+	</div>
+);
